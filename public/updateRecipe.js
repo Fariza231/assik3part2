@@ -10,7 +10,7 @@ const ingredients = document.getElementById("ingredients");
 const instructions = document.getElementById("instructions");
 const form = document.getElementById("form");
 
-axios.get(`/api/recipes/${id}`)
+axios.get(`/api/recipes/data/${id}`)
   .then(res => {
     const r = res.data;
     name.value = r.name;
