@@ -59,7 +59,7 @@ axios.get("/api/recipes/data")
     });
 
     if(!res.data.length){
-      list.innerHTML = <p id='error'>No recipe yet. Please create new</p>
+      list.innerHTML = `<p id='error'>No recipe yet. Please create new</p>`
     }
   })
   .catch(err => console.error(err));
