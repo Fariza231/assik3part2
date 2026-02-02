@@ -245,6 +245,7 @@ footer{
 .createRecipe_content, .recipes__content{
   min-height: 500px;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 .createRecipe_content-form{
   display: flex;
@@ -263,12 +264,12 @@ footer{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 500px;
+  /* width: 500px; */
 }
 #recipe-list{
   width: 90%;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
   margin: 100px auto;
 }
@@ -286,9 +287,31 @@ footer{
 #flex{
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 .name{
   font-size: 1.2rem;
   font-weight: 900;
   text-decoration: underline;
+  cursor: pointer;
+}
+#favourite{
+  width: 30px;
+}
+#food{
+  width: 100px;
+}
+input{
+  width: 250px;
+  height: 30px;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+textarea{
+  width: 260px;
+  height: 60px;
+}
+select{
+  width: 260px;
+  height: 30px;
 }
